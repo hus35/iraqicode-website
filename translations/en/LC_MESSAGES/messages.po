@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Home"
+msgstr "Home"
+
+msgid "Services"
+msgstr "Services"
+
+msgid "Projects"
+msgstr "Projects"
+
+msgid "Contact"
+msgstr "Contact"
+
+msgid "Welcome to IraqiCode"
+msgstr "Welcome to IraqiCode"
+
+msgid "We empower the next generation of web developers with world-class education."
+msgstr "We empower the next generation of web developers with world-class education."
+
+msgid "Explore Our Services"
+msgstr "Explore Our Services"
+
+msgid "Our Services"
+msgstr "Our Services"
+
+msgid "Modern Curricula"
+msgstr "Modern Curricula"
+
+msgid "Practical Projects"
+msgstr "Practical Projects"
+
+msgid "Continuous Support"
+msgstr "Continuous Support"
+
+msgid "About IraqiCode"
+msgstr "About IraqiCode"
+
+msgid "Contact Us"
+msgstr "Contact Us"
+
+msgid "Our Projects"
+msgstr "Our Projects"
+
+msgid "Oops! Page not found."
+msgstr "Oops! Page not found."
+
+msgid "Back to Home"
+msgstr "Back to Home"

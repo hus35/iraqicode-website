@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h1 class="text-center mb-5">{{ _('Our Projects') }}</h1>
+
+<div class="row g-4">
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 1">
+            <div class="card-body">
+                <h5 class="card-title">E-Learning Platform</h5>
+                <p class="card-text">An online platform providing educational content and interactive learning tools.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <img src="{{ url_for('static', filename='images/project2.jpg') }}" class="card-img-top" alt="Project 2">
+            <div class="card-body">
+                <h5 class="card-title">Healthcare Mobile App</h5>
+                <p class="card-text">Mobile application for booking medical appointments and managing healthcare services.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card shadow-sm h-100">
+            <img src="{{ url_for('static', filename='images/project3.jpg') }}" class="card-img-top" alt="Project 3">
+            <div class="card-body">
+                <h5 class="card-title">AI Chatbot System</h5>
+                <p class="card-text">A smart chatbot system powered by AI technologies for customer support.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

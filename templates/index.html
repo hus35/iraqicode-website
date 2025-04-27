@@ -1,0 +1,48 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ _('Home') }} - IraqiCode{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="text-center my-5">
+  <h1 class="display-4 mb-3">{{ _('Welcome to IraqiCode') }}</h1>
+  <p class="lead mb-4">{{ _('We empower the next generation of web developers with world-class education.') }}</p>
+  <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg">{{ _('Explore Our Services') }}</a>
+</section>
+
+<!-- Features Section -->
+<section class="row text-center g-4 my-5">
+  <div class="col-md-4">
+    <div class="card p-4 shadow-sm h-100">
+      <h3>{{ _('Modern Curricula') }}</h3>
+      <p>{{ _('Up-to-date content aligned with global web standards and practices.') }}</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-4 shadow-sm h-100">
+      <h3>{{ _('Practical Projects') }}</h3>
+      <p>{{ _('Hands-on learning with real-world projects and internships.') }}</p>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card p-4 shadow-sm h-100">
+      <h3>{{ _('Continuous Support') }}</h3>
+      <p>{{ _('Mentorship, technical support, and a strong alumni network.') }}</p>
+    </div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="my-5">
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <h2>{{ _('About IraqiCode') }}</h2>
+      <p>{{ _('IraqiCode is committed to advancing technology education in Iraq and the Arab world through expert-led programs and innovative learning solutions.') }}</p>
+      <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">{{ _('Contact Us') }}</a>
+    </div>
+    <div class="col-md-6">
+      <img src="{{ url_for('static', filename='images/about.svg') }}" alt="About IraqiCode" class="img-fluid">
+    </div>
+  </div>
+</section>
+{% endblock %}

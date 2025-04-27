@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1>{{ _('Our Blog') }}</h1>
+    <p>{{ _('Latest articles and insights from IraqiCode team.') }}</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+                <h5 class="card-title">دليل شامل لتعلم HTML5</h5>
+                <p class="card-text">تعرف على كيفية بناء أول صفحة ويب باستخدام HTML5 بأسلوب بسيط وسهل.</p>
+                <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+                <h5 class="card-title">أفضل 10 ممارسات لتعلم CSS</h5>
+                <p class="card-text">كيف تجعل موقعك يبدو عصرياً واحترافياً باستخدام CSS خطوة بخطوة.</p>
+                <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow">
+            <div class="card-body">
+                <h5 class="card-title">مقدمة في JavaScript للمبتدئين</h5>
+                <p class="card-text">ابدأ كتابة أول أكواد JavaScript بطريقة سهلة وعملية للمبتدئين تماماً.</p>
+                <a href="#" class="btn btn-primary">اقرأ المزيد</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

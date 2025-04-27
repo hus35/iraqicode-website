@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ _('Services') }} - IraqiCode{% endblock %}
+
+{% block content %}
+<!-- Services Section -->
+<section class="text-center my-5">
+  <h1 class="display-4 mb-4">{{ _('Our Services') }}</h1>
+  <p class="lead mb-5">{{ _('We provide comprehensive technology education and innovative solutions tailored for individuals and companies.') }}</p>
+
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('Web Development Courses') }}</h3>
+        <p>{{ _('Master front-end and back-end development with expert instructors and real-world projects.') }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('Mobile App Development') }}</h3>
+        <p>{{ _('Learn how to design and build Android and iOS apps from scratch using modern frameworks.') }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('Custom Software Solutions') }}</h3>
+        <p>{{ _('We offer tailored software development services for startups and businesses.') }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="text-center my-5">
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('AI and Machine Learning') }}</h3>
+        <p>{{ _('Explore artificial intelligence concepts and their applications in real-world projects.') }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('Cloud Computing') }}</h3>
+        <p>{{ _('Learn how to deploy and manage applications using cloud services like AWS and Azure.') }}</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p-4 shadow-sm h-100">
+        <h3>{{ _('Cybersecurity Training') }}</h3>
+        <p>{{ _('Understand the fundamentals of cybersecurity and how to protect digital assets.') }}</p>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<div class="text-center mb-5">
+    <h1>{{ _('About IraqiCode') }}</h1>
+    <p class="lead">{{ _('Our story, mission, and values.') }}</p>
+</div>
+
+<div class="row align-items-center">
+    <div class="col-md-6 mb-4">
+        <h2>{{ _('Who We Are') }}</h2>
+        <p>
+            {% if current_lang == 'ar' %}
+            IraqiCode هو مبادرة عراقية لتعليم البرمجة الحديثة بلغتين: العربية والإنجليزية. هدفنا تسهيل تعلم البرمجة والوصول للجميع.
+            {% else %}
+            IraqiCode is an Iraqi initiative to teach modern programming in Arabic and English. Our goal is to make coding education accessible to all.
+            {% endif %}
+        </p>
+    </div>
+
+    <div class="col-md-6 mb-4 text-center">
+        <img src="{{ url_for('static', filename='images/about-us.jpg') }}" alt="About IraqiCode" class="img-fluid rounded shadow">
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-md-4 text-center mb-4">
+        <h4>🎯 {{ _('Mission') }}</h4>
+        <p>
+            {% if current_lang == 'ar' %}
+            توفير محتوى تعليمي حديث وعملي لجميع الطلاب العرب.
+            {% else %}
+            Providing modern, practical educational content to all Arab students.
+            {% endif %}
+        </p>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+        <h4>💡 {{ _('Vision') }}</h4>
+        <p>
+            {% if current_lang == 'ar' %}
+            أن نصبح المنصة الأولى لتعلم البرمجة عربياً.
+            {% else %}
+            To become the #1 platform for learning programming in the Arab world.
+            {% endif %}
+        </p>
+    </div>
+    <div class="col-md-4 text-center mb-4">
+        <h4>🤝 {{ _('Values') }}</h4>
+        <p>
+            {% if current_lang == 'ar' %}
+            الالتزام - الإبداع - الجودة - البساطة.
+            {% else %}
+            Commitment - Creativity - Quality - Simplicity.
+            {% endif %}
+        </p>
+    </div>
+</div>
+{% endblock %}

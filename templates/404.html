@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %}{{ _('Page Not Found') }} - IraqiCode{% endblock %}
+
+{% block content %}
+<!-- 404 Error Section -->
+<section class="text-center my-5">
+  <h1 class="display-1 text-danger">404</h1>
+  <h2 class="mb-4">{{ _('Oops! Page not found.') }}</h2>
+  <p class="lead mb-5">{{ _('The page you are looking for does not exist or has been moved.') }}</p>
+  <a href="{{ url_for('index') }}" class="btn btn-primary">{{ _('Back to Home') }}</a>
+</section>
+{% endblock %}
+

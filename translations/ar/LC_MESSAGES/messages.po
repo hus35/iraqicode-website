@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"Language: ar\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+
+msgid "Home"
+msgstr "الرئيسية"
+
+msgid "Services"
+msgstr "خدماتنا"
+
+msgid "Projects"
+msgstr "مشاريعنا"
+
+msgid "Contact"
+msgstr "اتصل بنا"
+
+msgid "Welcome to IraqiCode"
+msgstr "مرحبًا بكم في IraqiCode"
+
+msgid "We empower the next generation of web developers with world-class education."
+msgstr "نحن نمكّن الجيل القادم من مطوري الويب من خلال تعليم عالمي المستوى."
+
+msgid "Explore Our Services"
+msgstr "استكشف خدماتنا"
+
+msgid "Our Services"
+msgstr "خدماتنا"
+
+msgid "Modern Curricula"
+msgstr "مناهج حديثة"
+
+msgid "Practical Projects"
+msgstr "مشاريع تطبيقية"
+
+msgid "Continuous Support"
+msgstr "دعم متواصل"
+
+msgid "About IraqiCode"
+msgstr "عن IraqiCode"
+
+msgid "Contact Us"
+msgstr "اتصل بنا"
+
+msgid "Our Projects"
+msgstr "مشاريعنا"
+
+msgid "Oops! Page not found."
+msgstr "عذرًا! الصفحة غير موجودة."
+
+msgid "Back to Home"
+msgstr "العودة للرئيسية"
