@@ -1,0 +1,54 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="{{ url_for('index') }}">Iraqi<span class="text-primary">Code</span></a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'index' %}active{% endif %}" href="{{ url_for('index') }}">{{ _('Home') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'about' %}active{% endif %}" href="{{ url_for('about') }}">{{ _('About') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'services' %}active{% endif %}" href="{{ url_for('services') }}">{{ _('Services') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'projects' %}active{% endif %}" href="{{ url_for('projects') }}">{{ _('Projects') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'products' %}active{% endif %}" href="{{ url_for('products') }}">{{ _('Products') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'blog' %}active{% endif %}" href="{{ url_for('blog') }}">{{ _('Blog') }}</a></li>
+        <li class="nav-item"><a class="nav-link {% if request.endpoint == 'contact' %}active{% endif %}" href="{{ url_for('contact') }}">{{ _('Contact') }}</a></li>
+      </ul>
+
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <!-- 🛒 Cart -->
+        <li class="nav-item me-3">
+          <a class="nav-link position-relative" href="{{ url_for('cart') }}">
+            🛒
+            {% if session.get('cart') %}
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                {{ session['cart']|length }}
+              </span>
+            {% endif %}
+          </a>
+        </li>
+
+        <!-- 🌐 Language Switch -->
+        <li class="nav-item dropdown me-3">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            🌐
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="{{ request.path }}?lang=en">🇺🇸 English</a></li>
+            <li><a class="dropdown-item" href="{{ request.path }}?lang=ar">🇸🇦 العربية</a></li>
+          </ul>
+        </li>
+
+        <!-- 👤 Login/Logout -->
+        {% if current_user.is_authenticated %}
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('dashboard') }}">{{ _('Dashboard') }}</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('logout') }}">{{ _('Logout') }}</a></li>
+        {% else %}
+          <li class="nav-item"><a class="nav-link" href="{{ url_for('login') }}">{{ _('Login') }}</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </div>
+</nav>

@@ -1,7 +1,7 @@
 {% extends 'layout.html' %}
 {% block content %}
 <div class="container my-5">
-    <h1 class="text-center mb-4">{{ _('Add New Product') }}</h1>
+    <h1 class="text-center mb-4">{{ _('Edit Product') }}</h1>
     <div class="row justify-content-center">
         <div class="col-md-8">
             <form method="POST">
@@ -21,7 +21,6 @@
                 <div class="mb-3">
                     {{ form.image_url.label(class="form-label") }}
                     {{ form.image_url(class="form-control") }}
-                    <small class="form-text text-muted">{{ _('Example: images/product1.jpg') }}</small>
                 </div>
                 <div class="mb-3">
                     {{ form.category.label(class="form-label") }}

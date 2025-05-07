@@ -1,33 +1,51 @@
 {% extends 'layout.html' %}
-
 {% block content %}
-<div class="container py-5">
-    <h1 class="text-center mb-5">{{ _('Our Products') }}</h1>
 
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-        {% for product in products %}
-        <div class="col">
-            <div class="card h-100 shadow-sm border-0">
-                {% if product.image_url %}
-                <img src="{{ product.image_url }}" class="card-img-top" alt="{{ product.name }}" style="height: 200px; object-fit: cover;">
-                {% else %}
-                <img src="{{ url_for('static', filename='images/default-product.jpg') }}" class="card-img-top" alt="Default Image" style="height: 200px; object-fit: cover;">
-                {% endif %}
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title fw-bold">
-                        <a href="{{ url_for('product_detail', product_id=product.id) }}" class="text-decoration-none text-dark">
-                            {{ product.name }}
-                        </a>
-                    </h5>                    
-                    <p class="card-text text-muted" style="flex-grow: 1;">{{ product.description[:120] }}...</p>
-                </div>
-                <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center">
-                    <span class="fw-bold text-primary">${{ "%.2f"|format(product.price) }}</span>
-                    <a href="{{ url_for('contact') }}" class="btn btn-sm btn-outline-primary">{{ _('Contact Us') }}</a>
-                </div>
-            </div>
+<div class="container my-5">
+
+  <!-- عنوان الصفحة -->
+  <div class="text-center mb-4">
+    <h2 class="fw-bold">{{ _('Our Products') }}</h2>
+    <p class="text-muted">{{ _('Explore our product catalog') }}</p>
+  </div>
+
+  <!-- فلترة حسب التصنيفات -->
+  <div class="mb-4 d-flex flex-wrap justify-content-center gap-2">
+    <a href="{{ url_for('products', category='all') }}" class="btn btn-outline-secondary btn-sm {% if selected_category == 'all' %}active{% endif %}">{{ _('All Categories') }}</a>
+    {% for cat in categories %}
+    <a href="{{ url_for('products', category=cat) }}" class="btn btn-outline-primary btn-sm {% if selected_category == cat %}active{% endif %}">{{ cat }}</a>
+    {% endfor %}
+  </div>
+
+  <!-- المنتجات -->
+  <div class="row">
+    {% for product in products %}
+    <div class="col-lg-4 col-md-6 mb-4">
+      <div class="card h-100 shadow-sm product-card">
+        <img src="{{ product.image_url or url_for('static', filename='placeholder.jpg') }}" class="card-img-top" alt="{{ product.name }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.name }}</h5>
+          {% if product.category %}
+          <p class="text-muted mb-1"><i class="bi bi-tags"></i> {{ product.category }}</p>
+          {% endif %}
+          <p class="card-text">{{ product.description[:80] }}...</p>
+          <div class="d-flex justify-content-between align-items-center mt-3">
+            <span class="fw-bold text-primary">${{ product.price }}</span>
+            <a href="{{ url_for('product_detail', product_id=product.id) }}" class="btn btn-sm btn-outline-primary">{{ _('Details') }}</a>
+          </div>
         </div>
-        {% endfor %}
+      </div>
     </div>
+    {% endfor %}
+  </div>
+
 </div>
+
+<style>
+  .product-card:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease-in-out;
+  }
+</style>
+
 {% endblock %}

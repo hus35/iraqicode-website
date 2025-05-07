@@ -1,38 +1,35 @@
 {% extends 'layout.html' %}
 {% block content %}
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5">
+      <i class="bi bi-kanban-fill me-2"></i> {{ _('Our Projects') }}
+    </h2>
 
-<h1 class="text-center mb-5">{{ _('Our Projects') }}</h1>
-
-<div class="row g-4">
-    <div class="col-md-4">
+    <div class="row g-4">
+      <div class="col-md-6">
         <div class="card shadow-sm h-100">
-            <img src="{{ url_for('static', filename='images/project1.jpg') }}" class="card-img-top" alt="Project 1">
-            <div class="card-body">
-                <h5 class="card-title">E-Learning Platform</h5>
-                <p class="card-text">An online platform providing educational content and interactive learning tools.</p>
-            </div>
+          <img src="{{ url_for('static', filename='images/project1.png') }}" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-laptop-code me-2"></i>{{ _('E-Learning Platform') }}</h5>
+            <p class="card-text">{{ _('We built a complete online education system that helps students learn remotely with ease.') }}</p>
+            <a href="#" class="btn btn-outline-primary">{{ _('View Details') }}</a>
+          </div>
         </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="card shadow-sm h-100">
+          <img src="{{ url_for('static', filename='images/project2.png') }}" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title"><i class="bi bi-heart-pulse-fill me-2"></i>{{ _('Healthcare Mobile App') }}</h5>
+            <p class="card-text">{{ _('A powerful mobile app for doctors and patients to connect and manage healthcare appointments.') }}</p>
+            <a href="#" class="btn btn-outline-primary">{{ _('View Details') }}</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-            <img src="{{ url_for('static', filename='images/project2.jpg') }}" class="card-img-top" alt="Project 2">
-            <div class="card-body">
-                <h5 class="card-title">Healthcare Mobile App</h5>
-                <p class="card-text">Mobile application for booking medical appointments and managing healthcare services.</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4">
-        <div class="card shadow-sm h-100">
-            <img src="{{ url_for('static', filename='images/project3.jpg') }}" class="card-img-top" alt="Project 3">
-            <div class="card-body">
-                <h5 class="card-title">AI Chatbot System</h5>
-                <p class="card-text">A smart chatbot system powered by AI technologies for customer support.</p>
-            </div>
-        </div>
-    </div>
-</div>
-
+  </div>
+</section>
 {% endblock %}

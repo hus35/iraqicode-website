@@ -1,48 +1,57 @@
 {% extends 'layout.html' %}
 
-{% block title %}{{ _('Home') }} - IraqiCode{% endblock %}
-
 {% block content %}
 <!-- Hero Section -->
-<section class="text-center my-5">
-  <h1 class="display-4 mb-3">{{ _('Welcome to IraqiCode') }}</h1>
-  <p class="lead mb-4">{{ _('We empower the next generation of web developers with world-class education.') }}</p>
-  <a href="{{ url_for('services') }}" class="btn btn-primary btn-lg">{{ _('Explore Our Services') }}</a>
+<section class="text-center text-white py-5" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('{{ url_for('static', filename='images/hero.webp') }}') no-repeat center center / cover;">
+  <div class="container py-5">
+    <h1 class="display-4 fw-bold">{{ _('Welcome to IraqiCode') }}</h1>
+    <p class="lead">{{ _('Empowering the next generation of developers.') }}</p>
+    <a href="{{ url_for('services', lang=g.get('lang', 'en')) }}" class="btn btn-primary px-4 py-2 mt-3">{{ _('Explore Our Services') }}</a>
+  </div>
 </section>
 
 <!-- Features Section -->
-<section class="row text-center g-4 my-5">
-  <div class="col-md-4">
-    <div class="card p-4 shadow-sm h-100">
-      <h3>{{ _('Modern Curricula') }}</h3>
-      <p>{{ _('Up-to-date content aligned with global web standards and practices.') }}</p>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card p-4 shadow-sm h-100">
-      <h3>{{ _('Practical Projects') }}</h3>
-      <p>{{ _('Hands-on learning with real-world projects and internships.') }}</p>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <div class="card p-4 shadow-sm h-100">
-      <h3>{{ _('Continuous Support') }}</h3>
-      <p>{{ _('Mentorship, technical support, and a strong alumni network.') }}</p>
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5">{{ _('Why Choose IraqiCode?') }}</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-code-slash display-5 text-primary mb-3"></i>
+            <h5 class="fw-bold">{{ _('Modern Curricula') }}</h5>
+            <p class="text-muted">{{ _('Up-to-date content aligned with global web standards.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-kanban display-5 text-success mb-3"></i>
+            <h5 class="fw-bold">{{ _('Practical Projects') }}</h5>
+            <p class="text-muted">{{ _('Hands-on learning with real-world projects.') }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card border-0 shadow h-100">
+          <div class="card-body">
+            <i class="bi bi-people display-5 text-warning mb-3"></i>
+            <h5 class="fw-bold">{{ _('Community & Support') }}</h5>
+            <p class="text-muted">{{ _('Strong mentorship and alumni network.') }}</p>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- About Section -->
-<section class="my-5">
-  <div class="row align-items-center">
-    <div class="col-md-6">
-      <h2>{{ _('About IraqiCode') }}</h2>
-      <p>{{ _('IraqiCode is committed to advancing technology education in Iraq and the Arab world through expert-led programs and innovative learning solutions.') }}</p>
-      <a href="{{ url_for('contact') }}" class="btn btn-outline-primary">{{ _('Contact Us') }}</a>
-    </div>
-    <div class="col-md-6">
-      <img src="{{ url_for('static', filename='images/about.svg') }}" alt="About IraqiCode" class="img-fluid">
-    </div>
+<!-- About IraqiCode -->
+<section class="py-5">
+  <div class="container text-center">
+    <h2 class="fw-bold">{{ _('About IraqiCode') }}</h2>
+    <p class="lead text-muted">{{ _('IraqiCode is a coding education platform committed to advancing technology skills across Iraq and the Arab world. Join our journey to code the future.') }}</p>
+    <a href="{{ url_for('contact', lang=g.get('lang', 'en')) }}" class="btn btn-outline-primary mt-3">{{ _('Contact Us') }}</a>
   </div>
 </section>
 {% endblock %}

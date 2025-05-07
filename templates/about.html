@@ -1,58 +1,57 @@
 {% extends 'layout.html' %}
-
 {% block content %}
-<div class="text-center mb-5">
-    <h1>{{ _('About IraqiCode') }}</h1>
-    <p class="lead">{{ _('Our story, mission, and values.') }}</p>
-</div>
-
-<div class="row align-items-center">
-    <div class="col-md-6 mb-4">
-        <h2>{{ _('Who We Are') }}</h2>
-        <p>
-            {% if current_lang == 'ar' %}
-            IraqiCode هو مبادرة عراقية لتعليم البرمجة الحديثة بلغتين: العربية والإنجليزية. هدفنا تسهيل تعلم البرمجة والوصول للجميع.
-            {% else %}
-            IraqiCode is an Iraqi initiative to teach modern programming in Arabic and English. Our goal is to make coding education accessible to all.
-            {% endif %}
-        </p>
+<section class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">{{ _('About IraqiCode') }}</h2>
+      <p class="lead">{{ _('Empowering the next generation of developers through modern education and real-world projects.') }}</p>
     </div>
 
-    <div class="col-md-6 mb-4 text-center">
-        <img src="{{ url_for('static', filename='images/about-us.jpg') }}" alt="About IraqiCode" class="img-fluid rounded shadow">
+    <div class="row align-items-center mb-5">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='images/team.jfif') }}" alt="Our Team" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h4 class="fw-semibold">{{ _('Our Vision') }}</h4>
+        <p>{{ _('At IraqiCode, we aim to revolutionize tech education in Iraq and the Arab world. We blend modern curriculum, mentorship, and hands-on projects to equip learners with job-ready skills.') }}</p>
+      </div>
     </div>
-</div>
 
-<div class="row mt-5">
-    <div class="col-md-4 text-center mb-4">
-        <h4>🎯 {{ _('Mission') }}</h4>
-        <p>
-            {% if current_lang == 'ar' %}
-            توفير محتوى تعليمي حديث وعملي لجميع الطلاب العرب.
-            {% else %}
-            Providing modern, practical educational content to all Arab students.
-            {% endif %}
-        </p>
+    <div>
+      <h4 class="text-center mb-4">{{ _('Project Timeline') }}</h4>
+      <ul class="timeline">
+        <li>
+          <strong>2023:</strong> {{ _('Initial idea and planning') }}
+        </li>
+        <li>
+          <strong>2024:</strong> {{ _('Website development and course material creation') }}
+        </li>
+        <li>
+          <strong>2025:</strong> {{ _('Public launch and partnership with local tech communities') }}
+        </li>
+      </ul>
     </div>
-    <div class="col-md-4 text-center mb-4">
-        <h4>💡 {{ _('Vision') }}</h4>
-        <p>
-            {% if current_lang == 'ar' %}
-            أن نصبح المنصة الأولى لتعلم البرمجة عربياً.
-            {% else %}
-            To become the #1 platform for learning programming in the Arab world.
-            {% endif %}
-        </p>
-    </div>
-    <div class="col-md-4 text-center mb-4">
-        <h4>🤝 {{ _('Values') }}</h4>
-        <p>
-            {% if current_lang == 'ar' %}
-            الالتزام - الإبداع - الجودة - البساطة.
-            {% else %}
-            Commitment - Creativity - Quality - Simplicity.
-            {% endif %}
-        </p>
-    </div>
-</div>
+  </div>
+</section>
+
+<style>
+  .timeline {
+    list-style: none;
+    padding: 0;
+  }
+  .timeline li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 15px;
+    border-left: 2px solid #007bff;
+  }
+  .timeline li::before {
+    content: '\2022';
+    position: absolute;
+    left: -9px;
+    top: 0;
+    color: #007bff;
+    font-size: 20px;
+  }
+</style>
 {% endblock %}

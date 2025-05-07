@@ -1,10 +1,42 @@
+# English translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
 msgid ""
 msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-04-30 12:00\n"
+"PO-Revision-Date: 2025-04-30 12:00\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: IraqiCode Website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-30\n"
+"PO-Revision-Date: 2025-04-30\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: English\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 msgid "Home"
 msgstr "Home"
+
+msgid "About"
+msgstr "About"
 
 msgid "Services"
 msgstr "Services"
@@ -12,20 +44,116 @@ msgstr "Services"
 msgid "Projects"
 msgstr "Projects"
 
+msgid "Products"
+msgstr "Products"
+
+msgid "Blog"
+msgstr "Blog"
+
 msgid "Contact"
 msgstr "Contact"
 
-msgid "Welcome to IraqiCode"
-msgstr "Welcome to IraqiCode"
+msgid "Login"
+msgstr "Login"
 
-msgid "We empower the next generation of web developers with world-class education."
-msgstr "We empower the next generation of web developers with world-class education."
+msgid "Logout"
+msgstr "Logout"
 
-msgid "Explore Our Services"
-msgstr "Explore Our Services"
+msgid "Dashboard"
+msgstr "Dashboard"
+
+msgid "Language"
+msgstr "Language"
+
+msgid "Welcome back, please login"
+msgstr "Welcome back, please login"
+
+msgid "Username"
+msgstr "Username"
+
+msgid "Password"
+msgstr "Password"
+
+msgid "Send"
+msgstr "Send"
+
+msgid "Send Message"
+msgstr "Send Message"
+
+msgid "Name"
+msgstr "Name"
+
+msgid "Email"
+msgstr "Email"
+
+msgid "Message"
+msgstr "Message"
+
+msgid "Your message has been sent successfully!"
+msgstr "Your message has been sent successfully!"
+
+msgid "An error occurred. Please try again later."
+msgstr "An error occurred. Please try again later."
+
+msgid "Product Name"
+msgstr "Product Name"
+
+msgid "Description"
+msgstr "Description"
+
+msgid "Price"
+msgstr "Price"
+
+msgid "Image URL"
+msgstr "Image URL"
+
+msgid "Add Product"
+msgstr "Add Product"
+
+msgid "Add New Product"
+msgstr "Add New Product"
+
+msgid "Product added successfully!"
+msgstr "Product added successfully!"
+
+msgid "Product updated successfully!"
+msgstr "Product updated successfully!"
+
+msgid "Product deleted successfully!"
+msgstr "Product deleted successfully!"
+
+msgid "Invalid username or password"
+msgstr "Invalid username or password"
+
+msgid "Welcome back!"
+msgstr "Welcome back!"
+
+msgid "You have been logged out."
+msgstr "You have been logged out."
+
+msgid "Page Not Found"
+msgstr "Page Not Found"
+
+msgid "Go Home"
+msgstr "Go Home"
 
 msgid "Our Services"
 msgstr "Our Services"
+
+msgid "Our Projects"
+msgstr "Our Projects"
+
+msgid "Our Products"
+msgstr "Our Products"
+
+msgid "Our Blog"
+msgstr "Our Blog"
+
+msgid "View Details"
+msgstr "View Details"
+
+msgid "Back to Products"
+msgstr "Back to Products"
 
 msgid "Modern Curricula"
 msgstr "Modern Curricula"
@@ -36,17 +164,72 @@ msgstr "Practical Projects"
 msgid "Continuous Support"
 msgstr "Continuous Support"
 
+msgid "Explore Our Services"
+msgstr "Explore Our Services"
+
 msgid "About IraqiCode"
 msgstr "About IraqiCode"
 
 msgid "Contact Us"
 msgstr "Contact Us"
 
+msgid "Read More"
+msgstr "Read More"
+
+
+
+msgid "Our Services"
+msgstr "Our Services"
+
+msgid "Web Development Courses"
+msgstr "Web Development Courses"
+
+msgid "Learn HTML, CSS, JavaScript, and backend development to become a full-stack developer."
+msgstr "Learn HTML, CSS, JavaScript, and backend development to become a full-stack developer."
+
+msgid "Start Learning"
+msgstr "Start Learning"
+
+msgid "AI and Machine Learning"
+msgstr "AI and Machine Learning"
+
+msgid "Discover the future by learning how machines think, predict, and solve problems."
+msgstr "Discover the future by learning how machines think, predict, and solve problems."
+
+msgid "Join Now"
+msgstr "Join Now"
+
+msgid "Custom Software Solutions"
+msgstr "Custom Software Solutions"
+
+msgid "Get tailor-made software built to solve your business needs efficiently."
+msgstr "Get tailor-made software built to solve your business needs efficiently."
+
+msgid "Request a Quote"
+msgstr "Request a Quote"
+
+
 msgid "Our Projects"
 msgstr "Our Projects"
 
-msgid "Oops! Page not found."
-msgstr "Oops! Page not found."
+msgid "E-Learning Platform"
+msgstr "E-Learning Platform"
 
-msgid "Back to Home"
-msgstr "Back to Home"
+msgid "We built a complete online education system that helps students learn remotely with ease."
+msgstr "We built a complete online education system that helps students learn remotely with ease."
+
+msgid "Healthcare Mobile App"
+msgstr "Healthcare Mobile App"
+
+msgid "A powerful mobile app for doctors and patients to connect and manage healthcare appointments."
+msgstr "A powerful mobile app for doctors and patients to connect and manage healthcare appointments."
+
+msgid "View Project"
+msgstr "View Project"
+
+msgid "Our Products"
+msgstr "Our Products"
+
+msgid "View Details"
+msgstr "View Details"
+

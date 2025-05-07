@@ -15,4 +15,5 @@ pytz==2025.2
 Werkzeug==2.3.7
 WTForms==3.2.1
 flask-sqlalchemy==3.1.1
- flask-login==0.6.3
+flask-login==0.6.3
+flask_mail==0.10.0

@@ -1,52 +1,235 @@
+# Arabic translations for PROJECT.
+# Copyright (C) 2025 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2025.
+#
 msgid ""
 msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2025-04-27 18:39+0300\n"
+"PO-Revision-Date: 2025-04-27 18:39+0300\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ar\n"
+"Language-Team: ar <LL@li.org>\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : "
+"n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.17.0\n"
+
+msgid ""
+msgstr ""
+"Project-Id-Version: IraqiCode Website\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-30 12:00\n"
+"PO-Revision-Date: 2025-04-30 12:00\n"
+"Last-Translator: Your Name <you@example.com>\n"
+"Language-Team: Arabic\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=0 && n%100<=2 ? 4 : 5);\n"
 
 msgid "Home"
 msgstr "الرئيسية"
 
+msgid "About"
+msgstr "من نحن"
+
 msgid "Services"
-msgstr "خدماتنا"
+msgstr "الخدمات"
 
 msgid "Projects"
-msgstr "مشاريعنا"
+msgstr "المشاريع"
+
+msgid "Products"
+msgstr "المنتجات"
+
+msgid "Blog"
+msgstr "المدونة"
 
 msgid "Contact"
-msgstr "اتصل بنا"
+msgstr "تواصل معنا"
 
-msgid "Welcome to IraqiCode"
-msgstr "مرحبًا بكم في IraqiCode"
+msgid "Login"
+msgstr "تسجيل الدخول"
 
-msgid "We empower the next generation of web developers with world-class education."
-msgstr "نحن نمكّن الجيل القادم من مطوري الويب من خلال تعليم عالمي المستوى."
+msgid "Logout"
+msgstr "تسجيل الخروج"
 
-msgid "Explore Our Services"
-msgstr "استكشف خدماتنا"
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+msgid "Language"
+msgstr "اللغة"
+
+msgid "Welcome back, please login"
+msgstr "مرحبًا بعودتك، يرجى تسجيل الدخول"
+
+msgid "Username"
+msgstr "اسم المستخدم"
+
+msgid "Password"
+msgstr "كلمة المرور"
+
+msgid "Send"
+msgstr "إرسال"
+
+msgid "Send Message"
+msgstr "إرسال الرسالة"
+
+msgid "Name"
+msgstr "الاسم"
+
+msgid "Email"
+msgstr "البريد الإلكتروني"
+
+msgid "Message"
+msgstr "الرسالة"
+
+msgid "Your message has been sent successfully!"
+msgstr "تم إرسال رسالتك بنجاح!"
+
+msgid "An error occurred. Please try again later."
+msgstr "حدث خطأ. الرجاء المحاولة لاحقاً."
+
+msgid "Product Name"
+msgstr "اسم المنتج"
+
+msgid "Description"
+msgstr "الوصف"
+
+msgid "Price"
+msgstr "السعر"
+
+msgid "Image URL"
+msgstr "رابط الصورة"
+
+msgid "Add Product"
+msgstr "إضافة منتج"
+
+msgid "Add New Product"
+msgstr "إضافة منتج جديد"
+
+msgid "Product added successfully!"
+msgstr "تم إضافة المنتج بنجاح!"
+
+msgid "Product updated successfully!"
+msgstr "تم تحديث المنتج بنجاح!"
+
+msgid "Product deleted successfully!"
+msgstr "تم حذف المنتج بنجاح!"
+
+msgid "Invalid username or password"
+msgstr "اسم المستخدم أو كلمة المرور غير صحيحة"
+
+msgid "Welcome back!"
+msgstr "مرحبًا بعودتك!"
+
+msgid "You have been logged out."
+msgstr "تم تسجيل الخروج بنجاح."
+
+msgid "Page Not Found"
+msgstr "الصفحة غير موجودة"
+
+msgid "Go Home"
+msgstr "العودة إلى الرئيسية"
 
 msgid "Our Services"
 msgstr "خدماتنا"
+
+msgid "Our Projects"
+msgstr "مشاريعنا"
+
+msgid "Our Products"
+msgstr "منتجاتنا"
+
+msgid "Our Blog"
+msgstr "مدونتنا"
+
+msgid "View Details"
+msgstr "عرض التفاصيل"
+
+msgid "Back to Products"
+msgstr "العودة إلى المنتجات"
 
 msgid "Modern Curricula"
 msgstr "مناهج حديثة"
 
 msgid "Practical Projects"
-msgstr "مشاريع تطبيقية"
+msgstr "مشاريع عملية"
 
 msgid "Continuous Support"
-msgstr "دعم متواصل"
+msgstr "دعم مستمر"
+
+msgid "Explore Our Services"
+msgstr "استكشف خدماتنا"
 
 msgid "About IraqiCode"
 msgstr "عن IraqiCode"
 
 msgid "Contact Us"
-msgstr "اتصل بنا"
+msgstr "تواصل معنا"
+
+msgid "Read More"
+msgstr "اقرأ المزيد"
+
+
+msgid "Our Services"
+msgstr "خدماتنا"
+
+msgid "Web Development Courses"
+msgstr "دورات تطوير الويب"
+
+msgid "Learn HTML, CSS, JavaScript, and backend development to become a full-stack developer."
+msgstr "تعلّم HTML و CSS و JavaScript وتطوير الواجهة الخلفية لتصبح مطورًا متكاملًا."
+
+msgid "Start Learning"
+msgstr "ابدأ التعلم الآن"
+
+msgid "AI and Machine Learning"
+msgstr "الذكاء الاصطناعي وتعلم الآلة"
+
+msgid "Discover the future by learning how machines think, predict, and solve problems."
+msgstr "استكشف المستقبل من خلال تعلم كيف تفكر الآلات وتتنبأ وتحل المشكلات."
+
+msgid "Join Now"
+msgstr "انضم الآن"
+
+msgid "Custom Software Solutions"
+msgstr "حلول برمجية مخصصة"
+
+msgid "Get tailor-made software built to solve your business needs efficiently."
+msgstr "احصل على برمجيات مصممة خصيصًا لتلبية احتياجات عملك بكفاءة."
+
+msgid "Request a Quote"
+msgstr "اطلب عرض سعر"
+
+
 
 msgid "Our Projects"
 msgstr "مشاريعنا"
 
-msgid "Oops! Page not found."
-msgstr "عذرًا! الصفحة غير موجودة."
+msgid "E-Learning Platform"
+msgstr "منصة تعليم إلكتروني"
 
-msgid "Back to Home"
-msgstr "العودة للرئيسية"
+msgid "We built a complete online education system that helps students learn remotely with ease."
+msgstr "أنشأنا نظام تعليم إلكتروني متكامل يساعد الطلاب على التعلم عن بُعد بسهولة."
+
+msgid "Healthcare Mobile App"
+msgstr "تطبيق صحي للموبايل"
+
+msgid "A powerful mobile app for doctors and patients to connect and manage healthcare appointments."
+msgstr "تطبيق قوي لربط الأطباء بالمرضى وتنظيم المواعيد الصحية."
+
+msgid "View Project"
+msgstr "عرض المشروع"
+
+msgid "Our Products"
+msgstr "منتجاتنا"
+
+msgid "View Details"
+msgstr "تفاصيل أكثر"

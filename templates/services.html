@@ -1,55 +1,52 @@
 {% extends 'layout.html' %}
-
-{% block title %}{{ _('Services') }} - IraqiCode{% endblock %}
-
 {% block content %}
-<!-- Services Section -->
-<section class="text-center my-5">
-  <h1 class="display-4 mb-4">{{ _('Our Services') }}</h1>
-  <p class="lead mb-5">{{ _('We provide comprehensive technology education and innovative solutions tailored for individuals and companies.') }}</p>
+<section class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 display-5 fw-bold">{{ _('Our Services') }}</h2>
 
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('Web Development Courses') }}</h3>
-        <p>{{ _('Master front-end and back-end development with expert instructors and real-world projects.') }}</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('Mobile App Development') }}</h3>
-        <p>{{ _('Learn how to design and build Android and iOS apps from scratch using modern frameworks.') }}</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('Custom Software Solutions') }}</h3>
-        <p>{{ _('We offer tailored software development services for startups and businesses.') }}</p>
-      </div>
-    </div>
-  </div>
-</section>
+    <div class="row g-4">
 
-<section class="text-center my-5">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('AI and Machine Learning') }}</h3>
-        <p>{{ _('Explore artificial intelligence concepts and their applications in real-world projects.') }}</p>
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-code-slash display-4 text-primary"></i>
+            </div>
+            <h5 class="card-title fs-4 fw-bold">{{ _('Web Development Courses') }}</h5>
+            <p class="card-text">{{ _('Learn HTML, CSS, JavaScript, and backend development to become a full-stack developer.') }}</p>
+            <a href="{{ url_for('contact', lang=g.get('lang', 'en')) }}" class="btn btn-outline-primary mt-3">{{ _('Start Learning') }}</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('Cloud Computing') }}</h3>
-        <p>{{ _('Learn how to deploy and manage applications using cloud services like AWS and Azure.') }}</p>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-brain display-4 text-success"></i>
+            </div>
+            <h5 class="card-title fs-4 fw-bold">{{ _('AI and Machine Learning') }}</h5>
+            <p class="card-text">{{ _('Discover the future by learning how machines think, predict, and solve problems.') }}</p>
+            <a href="{{ url_for('contact', lang=g.get('lang', 'en')) }}" class="btn btn-outline-success mt-3">{{ _('Join Now') }}</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class="card p-4 shadow-sm h-100">
-        <h3>{{ _('Cybersecurity Training') }}</h3>
-        <p>{{ _('Understand the fundamentals of cybersecurity and how to protect digital assets.') }}</p>
+
+      <div class="col-md-4">
+        <div class="card h-100 text-center shadow-sm">
+          <div class="card-body">
+            <div class="mb-3">
+              <i class="bi bi-tools display-4 text-warning"></i>
+            </div>
+            <h5 class="card-title fs-4 fw-bold">{{ _('Custom Software Solutions') }}</h5>
+            <p class="card-text">{{ _('Get tailor-made software built to solve your business needs efficiently.') }}</p>
+            <a href="{{ url_for('contact', lang=g.get('lang', 'en')) }}" class="btn btn-outline-warning mt-3">{{ _('Request a Quote') }}</a>
+          </div>
+        </div>
       </div>
+
     </div>
+
   </div>
 </section>
 {% endblock %}

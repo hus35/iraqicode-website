@@ -1,1 +1,73 @@
-body{font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-serif;margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-weight:700}a{text-decoration:none}footer{font-size:14px;color:#555}.fade-in{animation:fadeIn 1s}@keyframes fadeIn{from{opacity:0}to{opacity:1}}#darkModeToggle{z-index:1000}#backToTopBtn{z-index:1000}.dark-mode{background-color:#121212;color:#ffffff}nav.dark-mode,footer.dark-mode{background-color:#1f1f1f}
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f8f9fa;
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  h1, h2, h3, h4, h5 {
+    color: #212529;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border: none;
+  }
+  
+  .feature-box {
+    transition: transform 0.3s;
+  }
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Dark mode styles */
+  body.dark-mode {
+    background: #121212;
+    color: #f1f1f1;
+  }
+  
+  body.dark-mode .card {
+    background: #1e1e1e;
+    color: #ddd;
+  }
+  
+  body.dark-mode .btn-primary {
+    background-color: #0d6efd;
+  }
+  
+  body.dark-mode .btn-outline-primary {
+    border-color: #0d6efd;
+    color: #0d6efd;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  .card-text {
+    font-size: 0.95rem;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+  }
+  
+  .btn-success:hover {
+    background-color: #198754;
+    box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+  }
+
+
+  .nav-link:hover {
+    color: #ffc107 !important; /* أصفر ذهبي */
+    transition: color 0.3s ease;
+  }
+  .nav-link.active {
+    font-weight: bold;
+    color: #0dcaf0 !important; /* أزرق سماوي */
+  }
+  
+  
+  
