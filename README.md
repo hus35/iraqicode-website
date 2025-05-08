@@ -1,45 +1,114 @@
-# IraqiCode - Software Company Website
-# موقع IraqiCode - شركة برمجيات عراقية
+# 🌐 IraqiCode Website
 
-🌟 **IraqiCode** is a modern website designed for an Iraqi software and programming education company.  
-🌟 **IraqiCode** هو موقع إلكتروني حديث مصمم لشركة عراقية متخصصة في تعليم البرمجة وتطوير المواقع.  
-
-The site supports both Arabic and English languages and provides a smooth user experience with a modern interface.  
-الموقع يدعم اللغتين العربية والإنجليزية ويوفر تجربة مستخدم سلسة مع واجهة عصرية.
+A modern, bilingual educational website built using **Flask** that allows users to explore programming-related content, products, blog posts, and interact via contact and admin features.
 
 ---
 
-## 📋 Features | مميزات الموقع
+## 📌 Project Overview
 
-- 🌐 Bilingual support (Arabic - English) | دعم لغتين (عربي - إنجليزي)
-- 🎨 Modern responsive design (Bootstrap 5) | تصميم عصري متجاوب (Bootstrap 5)
-- 🛍️ Products page with individual product details | صفحة منتجات مع تفاصيل منتج فردية
-- 🔗 Related products under each product | عرض منتجات مشابهة لكل منتج
-- 🔒 Admin Dashboard (add/edit/delete products) | لوحة تحكم لإدارة المنتجات
-- 🛡️ Secure login system (Flask-Login) | نظام تسجيل دخول آمن
-- 📩 Contact form protected with reCAPTCHA | نموذج اتصال محمي بـ reCAPTCHA
-- 🚀 SEO Optimization per page and product | تحسين SEO لكل صفحة ومنتج
-- 🌙 Dark Mode / Light Mode Support | دعم الوضع الليلي والنهاري
-- ⚡ Optimized caching for faster loading | تحسين سرعة تحميل الصفحات
-- 🌍 Ready for deployment (Render or Vercel) | جاهز للنشر على Render أو Vercel
+**IraqiCode** is a full-featured web application aimed at supporting coding education in both Arabic and English. It provides:
 
----
-
-## 🛠️ Technologies Used | التقنيات المستخدمة
-
-- **Flask** (Back-End)
-- **Flask-Login** (Authentication)
-- **Flask-Babel** (Multi-language Support)
-- **Flask-WTF** (Forms + reCAPTCHA Protection)
-- **SQLite** (Product Database)
-- **Bootstrap 5** (Front-End Design)
-- **HTML5 / CSS3 / JavaScript**
+- 🔍 Product display with filter and detail view  
+- 🛒 Basic shopping cart system  
+- 📊 Dashboard for product analytics  
+- 📝 Blog section with author and date  
+- 🌍 Multilingual support (English/Arabic)  
+- 🔐 Admin panel for managing products  
+- 💬 Comment system  
+- 📱 Mobile responsive layout  
+- 📧 Contact form with email integration  
+- 🚀 Deployment-ready (Railway/GitHub)
 
 ---
 
-## 🚀 How to Run Locally | طريقة التشغيل محلياً
+## 🛠️ Technologies Used
 
-1. Clone the repository | استنسخ المشروع:
+| Technology        | Purpose                               |
+|------------------|----------------------------------------|
+| Flask            | Web framework (Python)                 |
+| Flask-SQLAlchemy | Database ORM with SQLite               |
+| Flask-Login      | User authentication                    |
+| Flask-Mail       | Send contact messages via Gmail SMTP   |
+| Flask-WTF        | Secure and clean form handling         |
+| Flask-Babel      | Language localization (ar/en)          |
+| Bootstrap 5      | Responsive UI design                   |
+| Jinja2           | Template rendering                     |
+| Chart.js         | Dashboard analytics chart              |
+| Gunicorn         | Production WSGI server                 |
 
+---
+
+## 🧱 Main Features
+
+- 🏠 Home, About, Services, Projects, Products, Blog, Contact pages
+- ✍️ Admin panel: Add, edit, delete products
+- 📂 Category filtering on products
+- 🛍️ Add to cart + cart preview in navbar
+- 📧 Contact form with live email support
+- 🌐 Language switcher with Arabic RTL support
+- 📊 Dashboard with total product count and graph
+- 💬 Product comments system
+- 🖼️ Product images with fallback
+- ✨ Modern design with clean UI
+
+---
+
+## 🚀 How to Run Locally
+
+1. Clone the repo:
 ```bash
-git clone https://github.com/username/iraqicode-website.git
+git clone https://github.com/yourusername/iraqicode-website.git
+cd iraqicode-website
+
+1- Create virtual environment and activate:
+python -m venv venv
+venv\Scripts\activate
+
+2- Install requirements:
+pip install -r requirements.txt
+
+3-Run the app:
+python app.py
+
+🌐 How to Deploy to Railway
+
+1-Push your project to GitHub
+
+2-Create Procfile:
+web: gunicorn app:app
+
+3-Connect Railway to GitHub
+
+4-Click "Deploy"
+
+5-Done!
+
+💡 Future Ideas
+- Full user registration & login
+
+- Payment integration (Stripe/PayPal)
+
+- Interactive programming quizzes
+
+- API backend (RESTful)
+
+- Enhanced product reviews & ratings
+
+- Better mobile support and PWA
+
+👤 Developed by
+Name: [HUSSEIN MASHAAN METEAB]
+Email: hussmash2@gmail.com
+Project: IraqiCode
+Supervised by: Prof. [Dr. FÜLEP Dávid]
+
+
+
+
+
+
+
+
+
+
+
